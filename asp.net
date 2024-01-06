@@ -1,0 +1,29 @@
+O que é ASP.NET ?
+
+Já sabemos que o .NET é um plataforma de desenvolvimento e que pode ser utilizado em conjunto com diferentes frameworks e bibliotecas, na construção dos mais diversos tipos de aplicação.
+
+Onde se encaixa o ASP.NET dentro de tudo isso?
+
+O ASP.NET é um framework gratuito e open souce e mantido pela microsoft. É uma plataforma que estende o uso do .NET, de modo a trazer ferramentas e bibliotecas voltadas ao desenvolvimento de Serviços e Aplicações Web.
+
+O ASP.NET é o sucessor do ASP (Active Server Pages), também chamado de ASP Clássico.
+
+O ASP é uma tecnologia antiga que possuía uma estrutura de bibliotecas voltadas à criação de aplicações web, utilizando scripts em VisualBasic ou JavaScript, com suporte também a Python. Essa tecnologia processava os scripts e possibilitava gerar conteúdo dinâmico no lado do servidor, que era enviado para o cliente (navegador) em forma de linguagem de marcação, como o html, por exemplo.
+
+Usos Comuns do ASP.NET:
+
+Com ASP.NET podemos desenvolver:
+
+Aplicações Web: é possível criar aplicações web com arquitetura MVC;
+
+APIs REST: o ASP.NET Web API facilita a construção de APIs baseadas em protocolo HTTP com REST;
+
+Aplicações em tempo real: o SignalR é uma biblioteca do ASP.NET que permite a comunicação bidirecional entre o servidor e o cliente. Por meio dele, podemos gerenciar conexões e desconexões, enviar conteúdos por push e até mesmo comunicar jogos em tempo real;
+
+Microsserviços: com o ASP.NET também é possível a criação de microsserviços, estilo de arquitetura na qual um serviço é dividido em pequenos serviços na web.
+
+
+Configuração de certificado HTTPS
+
+Antes de executarmos essa API criada, precisamos dizer ao nosso computador que o certificado de desenvolvimento do .NET é confiável: 
+dotnet dev-certs https --trust

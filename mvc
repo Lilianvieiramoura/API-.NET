@@ -1,0 +1,19 @@
+O MVC é um padrão de arquitetura, uma forma de organizar o código que separa a aplicação em três camadas lógicas principais, sendo elas:
+
+Model: Camada de Modelo;
+View: Camada de Visualização;
+Controller: Camada de Controladores.
+
+O MVC é utilizado para: (I) desacoplar a interface do usuário (View); (II) ter acesso a dados (Model); e (III) oferecer a entrada de requisições da pessoa usuária e lógica do aplicativo (Controller). Esse padrão ajuda a alcançar a separação de interesses e responsabilidades de cada parte do código.
+
+Fluxo de uma aplicação que utiliza o padrão MVC:
+
+As solicitações da pessoa usuária são roteadas para uma Controller, que é responsável por receber essas solicitações e aplicar toda a lógica da aplicação, trabalhando em conjunto com a Model;
+
+A Model fica responsável por acessar os bancos de dados e realizar consultas e/ou manipular dados;
+
+A camada Controller escolhe a Visualização a ser exibida e a alimenta com informações vindas da Model, quando necessário;
+
+A View fica responsável pela interface exibida à pessoa usuária, renderizando a página final, com base nos dados vindos da Model.
+
+Além da camada Controller, é muito comum o uso de uma “Camada de serviço”, chamada de Service; ela isola as Regras de Negócio da aplicação e deixa a Controller responsável somente por receber as requisições
