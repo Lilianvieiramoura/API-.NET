@@ -17,7 +17,7 @@ public class ClientController : ControllerBase
 
     return StatusCode(201, client);
   }
-
+  //atualizar
   [HttpPut("{id}")]
   public ActionResult Update(int id, ClientRequest request)
   {
@@ -29,5 +29,16 @@ public class ClientController : ControllerBase
     var clientUpdated = request.UpdateClient(client);
 
     return Ok(clientUpdated);
+  }
+
+  //deletar
+  [HttpDelete("{id}")]
+  public ActionResult Delete(int id)
+  {
+    var removed = _clients.RemoveAll(c => c.Id == id);
+    if (removed == 0)
+      return NotFound("Client not found");
+
+    return NoContent();
   }
 }
